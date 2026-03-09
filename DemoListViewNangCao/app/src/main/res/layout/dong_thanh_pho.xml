@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Ảnh thành phố -->
+    <ImageView
+        android:id="@+id/imgHinh"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:contentDescription="City Image" />
+
+    <!-- Tên thành phố -->
+    <TextView
+        android:id="@+id/txtTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imgHinh"
+        android:layout_toRightOf="@id/imgHinh"
+        android:layout_marginLeft="10dp"
+        android:text="Tên"
+        android:textColor="#E91E63"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Link wiki -->
+    <TextView
+        android:id="@+id/txtlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTen"
+        android:layout_toRightOf="@id/imgHinh"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="link wiki"
+        android:textColor="#3F51B5"
+        android:textSize="14sp" />
+
+</RelativeLayout>
