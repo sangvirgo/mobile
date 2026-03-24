@@ -10,12 +10,22 @@
         android:orientation="vertical"
         android:padding="24dp">
 
-        <ImageView
-            android:id="@+id/imgAvatar"
+        <FrameLayout
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_profile" />
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/avatar_placeholder" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/circle_border" />
+        </FrameLayout>
 
         <TextView
             android:layout_width="match_parent"
