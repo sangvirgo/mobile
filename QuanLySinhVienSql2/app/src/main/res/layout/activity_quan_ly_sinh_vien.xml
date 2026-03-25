@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuanLySinhVienActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lớp:"
+            android:textColor="#555555"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spLopHoc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/customize_edittext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mã Sinh Viên"
+            android:textColor="#555555"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtMaSV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/customize_edittext"
+            android:hint="Vui lòng nhập mã sinh viên"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Họ tên Sinh Viên"
+            android:textColor="#555555"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtHotenSV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/customize_edittext"
+            android:hint="Vui lòng nhập họ tên sinh viên"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày Tháng Năm Sinh"
+            android:textColor="#555555"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtNgaySinhSV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/customize_edittext"
+            android:hint="Vui lòng nhập ngày tháng sinh viên"
+            android:inputType="text"
+            android:paddingLeft="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnLuuSinhVien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/customize_button"
+                app:backgroundTint="@null"
+                android:textColor="#FFFFFF"
+                android:text="LƯU"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnThoatSinhVien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/customize_button"
+                app:backgroundTint="@null"
+                android:textColor="#FFFFFF"
+                android:text="THOÁT"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvDanhsachSinhvien"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
