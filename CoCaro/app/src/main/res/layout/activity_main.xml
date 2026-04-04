@@ -2,18 +2,145 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <TableLayout
+
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5pt">
+
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                android:layout_margin="3pt"
+                android:onClick="btClick"
+                android:padding="0pt"
+                android:textSize="50dp"
+                app:backgroundTint="#BCB9B9" />
+
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                android:layout_margin="3pt"
+                android:onClick="btClick"
+                android:textSize="50dp"
+                app:backgroundTint="#BCB9B9" />
+
+            <Button
+                android:id="@+id/bt3"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                android:layout_margin="3pt"
+                android:onClick="btClick"
+                android:textSize="50dp"
+                app:backgroundTint="#BCB9B9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5pt">>
+
+            <Button
+                android:id="@+id/bt4"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                android:layout_margin="3pt"
+                android:onClick="btClick"
+                android:textSize="50dp"
+                app:backgroundTint="#BCB9B9" />
+
+            <Button
+                android:id="@+id/bt5"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                android:layout_margin="3pt"
+                android:onClick="btClick"
+                android:textSize="50dp"
+                app:backgroundTint="#BCB9B9" />
+
+            <Button
+                android:id="@+id/bt6"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                android:layout_margin="3pt"
+                android:onClick="btClick"
+                android:textSize="50dp"
+                app:backgroundTint="#BCB9B9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5pt">
+
+            <Button
+                android:id="@+id/bt7"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                android:layout_margin="3pt"
+                android:onClick="btClick"
+                android:textSize="50dp"
+                app:backgroundTint="#BCB9B9" />
+
+            <Button
+                android:id="@+id/bt8"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                android:layout_margin="3pt"
+                android:onClick="btClick"
+                android:textSize="50dp"
+                app:backgroundTint="#BCB9B9" />
+
+            <Button
+                android:id="@+id/bt9"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                android:layout_margin="3pt"
+                android:onClick="btClick"
+                android:textSize="50dp"
+                app:backgroundTint="#BCB9B9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="5pt"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btPlayAgain"
+                android:padding="5pt"
+                android:text="Bắt Đầu"></Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="5pt"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtShowresult"
+                android:layout_width="match_parent"
+                android:layout_span="3"
+                android:gravity="center"
+                android:text="AÂ"
+                android:textSize="30sp"
+                android:visibility="invisible"></TextView>
+        </TableRow>
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

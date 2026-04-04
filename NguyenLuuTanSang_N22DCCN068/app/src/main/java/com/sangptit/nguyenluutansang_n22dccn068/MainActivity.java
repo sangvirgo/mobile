@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mViewPager = findViewById(R.id.view_pager);
-        mBottomNavigationView = findViewById(R.id.bottom_navigation);
+        mViewPager = findViewById(R.id.viewPager);
+        mBottomNavigationView = findViewById(R.id.bottomNavigationView);
 
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         mViewPager.setAdapter(viewPagerAdapter);

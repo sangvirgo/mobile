@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="5dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imgHinhAnh"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/txtTenHinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên hình"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000"/>
+
+</LinearLayout>
