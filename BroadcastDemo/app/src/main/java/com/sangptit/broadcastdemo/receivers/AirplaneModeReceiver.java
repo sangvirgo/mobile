@@ -5,14 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-/**
- * ============================================================
- * AIRPLANE MODE RECEIVER (Dang ky dong trong code)
- * ============================================================
- *
- * Lang nghe khi nguoi dung bat/tat che do may bay.
- * Action: Intent.ACTION_AIRPLANE_MODE_CHANGED
- */
 public class AirplaneModeReceiver extends BroadcastReceiver {
 
     private static final String TAG = "AirplaneModeReceiver";
@@ -22,9 +14,6 @@ public class AirplaneModeReceiver extends BroadcastReceiver {
     }
 
     private OnAirplaneModeListener listener;
-
-    public AirplaneModeReceiver() {
-    }
 
     public AirplaneModeReceiver(OnAirplaneModeListener listener) {
         this.listener = listener;

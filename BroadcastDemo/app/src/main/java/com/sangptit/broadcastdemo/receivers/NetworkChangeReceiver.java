@@ -7,24 +7,10 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.util.Log;
 
-/**
- * ============================================================
- * DYNAMIC BROADCAST RECEIVER (Dang ky trong code bang registerReceiver)
- * ============================================================
- *
- * Receiver nay duoc dang ky DONG trong Activity:
- *   registerReceiver(receiver, intentFilter)
- *
- * Va huy dang ky khi Activity destroy:
- *   unregisterReceiver(receiver)
- *
- * Dung de lang nghe thay doi trang thai mang (Wifi/Mobile Data)
- */
 public class NetworkChangeReceiver extends BroadcastReceiver {
 
     private static final String TAG = "NetworkChangeReceiver";
 
-    // Interface callback de gui ket qua ve Activity
     public interface OnNetworkChangeListener {
         void onNetworkChanged(boolean isConnected, String networkType);
     }
@@ -59,7 +45,6 @@ public class NetworkChangeReceiver extends BroadcastReceiver {
 
         Log.d(TAG, "Mang thay doi: " + networkType + " | Connected: " + isConnected);
 
-        // Gui ket qua ve Activity thong qua listener
         if (listener != null) {
             listener.onNetworkChanged(isConnected, networkType);
         }

@@ -6,17 +6,6 @@ import android.content.Intent;
 import android.os.BatteryManager;
 import android.util.Log;
 
-/**
- * ============================================================
- * BATTERY BROADCAST RECEIVER (Dang ky dong trong code)
- * ============================================================
- *
- * Lang nghe cac thay doi ve pin:
- * - ACTION_BATTERY_CHANGED: Muc pin thay doi
- * - ACTION_BATTERY_LOW: Pin yeu
- * - ACTION_POWER_CONNECTED: Cam sac
- * - ACTION_POWER_DISCONNECTED: Rut sac
- */
 public class BatteryReceiver extends BroadcastReceiver {
 
     private static final String TAG = "BatteryReceiver";
